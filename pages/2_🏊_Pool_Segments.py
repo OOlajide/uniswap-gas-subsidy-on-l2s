@@ -270,6 +270,36 @@ df5a_fig2.update_traces(selector=dict(name='Avg Txn Fee USD'), line=dict(color="
 ############# LAYOUT ##############
 ###################################
 
+st.subheader('Methodology')
+
+st.markdown('''
+
+- Pool Volume:
+   - We calculate the total volume for each liquidity pool since inception.
+   - Pools are categorized into four volume tiers:
+     a) Very High: > $10B total volume
+     b) High: $1B - $10B total volume
+     c) Medium: $100M - $999M total volume
+     d) Low: <$100M total volume
+
+- Pool Age:
+   - We determine the age of each pool by identifying its first swap transaction.
+   - Pools are categorized into two age groups:
+     a) Older than 1 year
+     b) Not older than 1 year
+
+- Metrics Calculation:
+   For each category in both analyses, we calculate daily:
+   - Total active users
+   - Number of transactions
+   - Total transaction fees (in ETH and USD)
+   - Average transaction fees (in ETH and USD)
+
+- Data Aggregation:
+   - We combine the swap data with daily average fee information.
+   - Results are grouped by date and category (volume tier or age group).
+''')
+
 colored_header(
     label="",
     description="",
