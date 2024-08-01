@@ -382,6 +382,7 @@ colored_header(
     color_name="gray-70",
 )
 st.markdown(f'<h1 style="color:#434346;font-size:40px;text-align:center;">{"General Overview"}</h1>', unsafe_allow_html=True)
+st.info("This page encapsulates the essential takeaways from our analysis.", icon="ℹ️")
 colored_header(
     label="",
     description="",
