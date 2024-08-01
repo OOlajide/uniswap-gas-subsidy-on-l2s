@@ -358,7 +358,7 @@ df1a_fig6.update_traces(line=dict(width=0.9))
 ############# LAYOUT ##############
 ###################################
 
-text_1 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 20px;">This analysis aims to delve deep into the effects of gas subsidies on Uniswap's ecosystem, with a particular focus on L2 networks: Arbitrum, Base and Optimism in particular, where the majority of retail user activity occurs. Our objective is to provide actionable insights that can guide Uniswap's strategy in optimizing gas subsidies to enhance user engagement and ultimately boost protocol revenue.</p>'
+text_1 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 20px;">This analysis aims to delve deep into the effects of gas subsidies on Uniswap\'s ecosystem, with a particular focus on L2 networks: Arbitrum, Base and Optimism in particular, where the majority of retail user activity occurs. Our objective is to provide actionable insights that can guide Uniswap\'s strategy in optimizing gas subsidies to enhance user engagement and ultimately boost protocol revenue.</p>'
 
 text_2 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 20px;">Key areas of focus include:</p>'
 
