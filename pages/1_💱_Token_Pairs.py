@@ -435,8 +435,7 @@ df3a_fig4.update_traces(selector=dict(name='Avg Txn Fee USD'), line=dict(color="
 
 st.subheader('Methodology')
 
-methodology_text = '''
-Methodology:
+methodology_text = """
 
 Our analysis focuses on Uniswap activity across three Layer 2 (L2) networks: Arbitrum, Base, and Optimism, starting from January 1, 2023.
 
@@ -469,7 +468,7 @@ Our analysis focuses on Uniswap activity across three Layer 2 (L2) networks: Arb
 5. Data Aggregation:
    - We combine the swap data with daily average fee information.
    - Results are grouped by date and category (Full/Partial Stablecoin or Governance Pairs).
-'''
+"""
 
 colored_header(
     label="",
