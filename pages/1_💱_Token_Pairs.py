@@ -493,17 +493,6 @@ colored_header(
     color_name="gray-70",
 )
 
-insight_1 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 18px;"></p>'
-st.markdown(insight_1, unsafe_allow_html=True)
-
-insight_2 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 18px;"></p>'
-st.markdown(insight_2, unsafe_allow_html=True)
-
-colored_header(
-    label="",
-    description="",
-    color_name="gray-70",
-)
 st.markdown(f'<h1 style="color:#434346;font-size:40px;text-align:center;">{"Governance Pairs"}</h1>', unsafe_allow_html=True)
 colored_header(
     label="",
@@ -522,21 +511,3 @@ st.link_button("View SQL", f"{url3a}")
 
 st.plotly_chart(df3a_fig4, theme="streamlit", use_container_width=True)
 st.link_button("View SQL", f"{url3a}")
-
-colored_header(
-    label="",
-    description="",
-    color_name="gray-70",
-)
-
-insight_3 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 18px;"></p>'
-st.markdown(insight_3, unsafe_allow_html=True)
-
-insight_4 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 18px;"></p>'
-st.markdown(insight_4, unsafe_allow_html=True)
-
-colored_header(
-    label="",
-    description="",
-    color_name="gray-70",
-)
