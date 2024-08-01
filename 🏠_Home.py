@@ -368,7 +368,7 @@ text_4 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 20px;">We\
 
 text_5 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 20px;">We analyzed data from these 3 L2s: Arbitrum, Base, and Optimism, provided by <a href="https://flipsidecrypto.xyz/">Flipside Crypto</a>. You can click on the <b>View SQL</b> button under each chart to view the underlying SQL query.</p>'
 
-st.markdown(f<h1 style="color:#434346;font-size:60px;text-align:center;">{"Uniswap Gas Subsidy On L2s"}</h1>, unsafe_allow_html=True)
+st.markdown(f'<h1 style="color:#434346;font-size:40px;text-align:center;">{"Uniswap Gas Subsidy On L2s"}</h1>', unsafe_allow_html=True)
 
 st.markdown(text_1, unsafe_allow_html=True)
 st.markdown(text_2, unsafe_allow_html=True)
