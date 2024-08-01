@@ -376,6 +376,41 @@ st.markdown(text_3, unsafe_allow_html=True)
 st.markdown(text_4, unsafe_allow_html=True)
 st.markdown(text_5, unsafe_allow_html=True)
 
+st.subheader('Methodology')
+st.markdown(
+    '''
+    **Our analysis focuses on Uniswap activity across three Layer 2 (L2) networks: Arbitrum, Base, and Optimism, starting from January 1, 2023.**
+    
+    1. **Swap Transactions:**
+       - We collect detailed swap transaction data from the `crosschain.defi.ez_dex_swaps` table.
+       - For each swap, we record timestamp, transaction hash, pool information, trader address, and token details (including amounts and USD values).
+    
+    2. **Transaction Fees:**
+       - We join swap data with transaction fee information from each L2's `core.fact_transactions` table.
+       - We convert ETH-denominated fees to USD using hourly price data from `ethereum.price.ez_prices_hourly`.
+    
+    3. **Volume Data:**
+       - Daily volume in USD is aggregated from `external.defillama.fact_dex_volume` for Uniswap v1, v2, and v3 on the three L2s.
+    
+    4. **Protocol Fees:**
+       - We collect daily protocol fees in USD from `external.defillama.fact_protocol_fees_revenue` for Uniswap across all versions on the L2s.
+    
+    5. **Liquidity Provider (LP) Actions:**
+       - We analyze LP activities by counting distinct transactions for minting, burning, increasing, and decreasing liquidity.
+       - This data is gathered from `ez_decoded_event_logs` on each L2, focusing on Uniswap-related contracts.
+    
+    6. **Data Aggregation:**
+       - We combine all these data sources to create a daily summary of Uniswap activity across the L2s.
+       - Key metrics include:
+         * Total active users and swap transactions
+         * LP action counts (mints, burns, increases, decreases)
+         * Total active pools
+         * Transaction fees (total and average, in both ETH and USD)
+         * Volume in USD
+         * Protocol fees in USD
+    '''
+)
+
 colored_header(
     label="",
     description="",
