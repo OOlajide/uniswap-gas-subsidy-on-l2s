@@ -277,10 +277,10 @@ st.markdown('''
 - Pool Volume:
    - We calculate the total volume for each liquidity pool since inception.
    - Pools are categorized into four volume tiers:
-     - Very High: more than $10B total volume
-     - High: $1B to $10B total volume
-     - Medium: $100M to $999M total volume
-     - Low: less than $100M total volume
+     - Very High: more than 10B total volume
+     - High: 1B to 10B total volume
+     - Medium: 100M to 999M total volume
+     - Low: less than 100M total volume
 
 - Pool Age:
    - We determine the age of each pool by identifying its first swap transaction.
