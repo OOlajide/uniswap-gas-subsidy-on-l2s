@@ -86,7 +86,7 @@ st.plotly_chart(fig)
 methodology_text = '''
 ### Methodology
 
-We applied the subsidy to the total transaction fees for each day and then projected its impact proportionally to other metrics, under the assumption of a linear relationship. Specifically, the methodology involves generating future dates, combining them with historical data, and applying the selected subsidy percentage to calculate the new forecasted metric for each day in the unified date range. The forecast also assumes a linear relationship, meaning that a change in transaction fees will result in a proportional change in the selected metric.
+We applied the subsidy to the total transaction fees for each day and then projected its impact proportionally to other metrics, under the assumption of a linear relationship. Specifically, the methodology involves applying the selected subsidy percentage to calculate the new forecasted metric for each day in the unified date range. The forecast also assumes a linear relationship, meaning that a change in transaction fees will result in a proportional change in the selected metric.
 
 This approach allows us to estimate how different levels of subsidies might influence user behavior and protocol performance over time, providing a simplified yet insightful view of potential outcomes.
 '''
