@@ -433,6 +433,44 @@ df3a_fig4.update_traces(selector=dict(name='Avg Txn Fee USD'), line=dict(color="
 ############# LAYOUT ##############
 ###################################
 
+st.subheader('Methodology')
+
+methodology_text = '''
+Methodology:
+
+Our analysis focuses on Uniswap activity across three Layer 2 (L2) networks: Arbitrum, Base, and Optimism, starting from January 1, 2023.
+
+1. Data Collection and Preparation:
+   - We collect swap transaction data from the crosschain.defi.ez_dex_swaps table.
+   - Transaction fees are obtained from each L2's core.fact_transactions table.
+   - ETH prices are sourced from ethereum.price.ez_prices_hourly for USD conversion.
+
+2. Stablecoin Pairs:
+   - We categorize swaps involving stablecoins into two groups:
+     a) Full Stablecoin Pairs: Both tokens in the swap are stablecoins.
+     b) Partial Stablecoin Pairs: At least one token in the swap is a stablecoin.
+   - We use a predefined list of stablecoins for classification: 'USDT', 'USDC', 'USDC.e', 'USDT.e', 'DAI', 'TUSD', 'USDP', 'GUSD', 'HUSD', 'FRAX', 'USDN', 'RSV', 'TUSD', 'GUSD', 'DOLA', 'USDX', 'LUSD', 'BUSD', 'MIM', 'BEAN', 'CUSD', 'FLEXUSD', 'MIMATIC', 'SUSD', 'FEI', 'OUSD', 'HUSD', 'VAI', 'MUSD','USDN', 'IST'.
+
+3. Governance Pairs:
+   - We categorize swaps involving governance tokens into two groups:
+     a) Full Governance Pairs: Both tokens in the swap are governance tokens.
+     b) Partial Governance Pairs: At least one token in the swap is a governance token.
+   - We use a predefined list of governance tokens for classification: 'UNI', 'AAVE', 'COMP', 'MKR', 'CRV', 'SUSHI', 'YFI', 'BAL', 'GNO', '1INCH', 'KNC', 'REN', 'OCEAN', 'ARB', 'GMX', 'RDNT', 'SYN', 'HOP', 'OP', 'SNX', 'PERP', 'VELO'.
+
+4. Metrics Calculation:
+   For each category in both analyses, we calculate daily:
+   - Total active users
+   - Number of swap transactions
+   - Total active pools
+   - Total transaction fees (in ETH and USD)
+   - Average transaction fees (in ETH and USD)
+   - Total volume in USD
+
+5. Data Aggregation:
+   - We combine the swap data with daily average fee information.
+   - Results are grouped by date and category (Full/Partial Stablecoin or Governance Pairs).
+'''
+
 colored_header(
     label="",
     description="",
