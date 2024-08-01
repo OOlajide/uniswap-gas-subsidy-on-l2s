@@ -437,19 +437,19 @@ st.subheader('Methodology')
 
 st.markdown('''
 
-1. Stablecoin Pairs:
+- Stablecoin Pairs:
    - We categorize swaps involving stablecoins into two groups:
-     a) Full Stablecoin Pairs: Both tokens in the swap are stablecoins.
-     b) Partial Stablecoin Pairs: At least one token in the swap is a stablecoin.
+     - Full Stablecoin Pairs: Both tokens in the swap are stablecoins.
+     - Partial Stablecoin Pairs: At least one token in the swap is a stablecoin, but not both.
    - We use a predefined list of stablecoins for classification: 'USDT', 'USDC', 'USDC.e', 'USDT.e', 'DAI', 'TUSD', 'USDP', 'GUSD', 'HUSD', 'FRAX', 'USDN', 'RSV', 'TUSD', 'GUSD', 'DOLA', 'USDX', 'LUSD', 'BUSD', 'MIM', 'BEAN', 'CUSD', 'FLEXUSD', 'MIMATIC', 'SUSD', 'FEI', 'OUSD', 'HUSD', 'VAI', 'MUSD','USDN', 'IST'.
 
-2. Governance Pairs:
+- Governance Pairs:
    - We categorize swaps involving governance tokens into two groups:
-     a) Full Governance Pairs: Both tokens in the swap are governance tokens.
-     b) Partial Governance Pairs: At least one token in the swap is a governance token.
+     - Full Governance Pairs: Both tokens in the swap are governance tokens.
+     - Partial Governance Pairs: At least one token in the swap is a governance token, but not both.
    - We use a predefined list of governance tokens for classification: 'UNI', 'AAVE', 'COMP', 'MKR', 'CRV', 'SUSHI', 'YFI', 'BAL', 'GNO', '1INCH', 'KNC', 'REN', 'OCEAN', 'ARB', 'GMX', 'RDNT', 'SYN', 'HOP', 'OP', 'SNX', 'PERP', 'VELO'.
 
-3. Metrics Calculation:
+- Metrics Calculation:
    For each category in both analyses, we calculate daily:
    - Total active users
    - Number of swap transactions
@@ -458,7 +458,7 @@ st.markdown('''
    - Average transaction fees (in ETH and USD)
    - Total volume in USD
 
-4. Data Aggregation:
+- Data Aggregation:
    - We combine the swap data with daily average fee information.
    - Results are grouped by date and category (Full/Partial Stablecoin or Governance Pairs).
 ''')
