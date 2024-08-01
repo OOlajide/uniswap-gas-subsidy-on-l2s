@@ -37,6 +37,19 @@ def load_df():
 
 df = load_df()
 
+
+colored_header(
+    label="",
+    description="",
+    color_name="gray-70",
+)
+st.markdown(f'<h1 style="color:#434346;font-size:40px;text-align:center;">{"Forecast Tool"}</h1>', unsafe_allow_html=True)
+colored_header(
+    label="",
+    description="",
+    color_name="gray-70",
+)
+
 # Forecasting Impact of Gas Subsidy
 
 # Create a slider for selecting subsidy percentage
