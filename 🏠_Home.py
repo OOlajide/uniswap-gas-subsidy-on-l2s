@@ -362,11 +362,11 @@ text_1 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 20px;">Thi
 
 text_2 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 20px;">Key areas of focus include:</p>'
 
-text_3 = '<ul style="font-family:sans-serif; color:#4d372c; font-size: 20px;"><li>Assessing the direct impact of gas subsidies on transaction volumes across different types of activities (swaps, liquidity additions, and removals).</li><li>Examining changes in liquidity provider (LP) behavior in response to reduced transaction costs.</li><li>Conducting a comparative analysis of gas subsidy effects across various liquidity pool types.</li><li>Investigating user responses to high gas periods on L2s and identifying potential targeted subsidy strategies.</li></ul>'
+text_3 = '<ul style="font-family:sans-serif; color:#4d372c; font-size: 20px;"><li>Assessing the direct impact of gas subsidies on transaction volumes across different types of activities (swaps, liquidity additions, and removals).</li><li>Examining changes in liquidity provider (LP) behavior in response to reduced transaction costs.</li><li>Conducting a comparative analysis of gas subsidy effects across various liquidity pool types.</li><li>Investigating user responses to high gas periods on L2s.</li></ul>'
 
 text_4 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 20px;">We\'ll explore not just how different user groups respond to gas price fluctuations, but also why these responses make compelling arguments for or against specific subsidy approaches.</p>'
 
-text_5 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 20px;">We analyzed data from these 3 L2s: Arbitrum, Base, and Optimism, provided by <a href="https://flipsidecrypto.xyz/">Flipside Crypto</a>. You can click on the <b>View SQL</b> button under each chart to view the underlying SQL query.</p>'
+text_5 = '<p style="font-family:sans-serif; color:#4d372c; font-size: 20px;">We analyzed data from these 3 L2s: Arbitrum, Base, and Optimism from Jan 2023 to July 2024, provided by <a href="https://flipsidecrypto.xyz/">Flipside Crypto</a>. You can click on the <b>View SQL</b> button under each chart to view the underlying SQL query.</p>'
 
 st.markdown(f'<h1 style="color:#434346;font-size:40px;text-align:center;">{"Uniswap Gas Subsidy On L2s"}</h1>', unsafe_allow_html=True)
 
